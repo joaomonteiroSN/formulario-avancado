@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,81 @@
     <link rel="stylesheet" href="./style.css">
     <title>Formulário Avançado Rocketseat</title>
 </head>
+
 <body>
-    <header class="header"></header>
-    <div class="page"></div>
+    <header class="header">
+        <h1>avalie sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="./assets/img1.png" alt="balão com estrelas">
+    </header>
+    <div class="page">
+        <form action="#">
+            <fieldset class="personal-info">
+                <legend>informações pessoais</legend>
+
+                <div class="field-name">
+
+                    <div class="input-wrapper">
+                        <label for="firstname">Nome</label>
+                        <input type="text" id="firstname">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" id="lastname">
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+            </fieldset>
+
+            <fieldset class="mentorship">
+                <legend>informações do mentor</legend>
+
+                <div class="input-wrapper">
+                    <label for="info-mentor">Selecione quem foi o seu mentor</label>
+                    <input type="text" name="info-mentor" id="info-mentor">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentor-feedback">
+                        Feedback sobre o mentor
+                    </label>
+                    <textarea name="" id="mentor-feedback" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="" id="check-box">
+                    <label for="check-box">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="date-info">
+                <legend>agendamento próxima mentoria</legend>
+
+                <div class="input-wrapper">
+                    <label for="date-info">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" class="date-info">
+                </div>
+
+                <div class="time-field">
+                    <div class="input-wrapper">
+                        <label for="time-info">Das</label>
+                        <input type="time" class="time-info">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="time-info">Até</label>
+                        <input type="time" class="time-info">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <footer>
+            <input type="submit" value="Salvar">
+        </footer>
+    </div>
 </body>
+
 </html>
