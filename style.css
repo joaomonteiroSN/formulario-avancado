@@ -102,9 +102,42 @@ fieldset {
 }
 
 .input-wrapper textarea {
-    width: 608px;
+    width: 622px;
     height: 166px;
     background: #FAFAFC;
     border: 1px solid #E6E6F0;
     border-radius: 8px;
+}
+
+.mentorship .input-wrapper input {
+    width: 622px;
+}
+
+.date-info {
+    width: 622px;
+    display: flex;
+    gap: 32px;
+}
+
+.date-info div {
+    flex: 1;
+}
+
+.date-info .input-wrapper input, .date-info .time-field input {
+    width: 100%;
+}
+
+.time-field {
+    display: flex;
+    gap: 10px;
+}
+
+footer input {
+    width: 622px;
+    height: 51px;
+    border: none;
+    border-radius: 8px;
+    background: #F67669;
+    color: #FFFFFF;
+    font-size: 20px;
 }
