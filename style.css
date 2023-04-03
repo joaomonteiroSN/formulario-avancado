@@ -45,6 +45,7 @@ body::before {
     margin: auto;
     margin-top: 107px;
     margin-bottom: 32px;
+    text-align: center;
 }
 
 .header p {
@@ -58,17 +59,29 @@ body::before {
     background: #FFFFFF;
 }
 
+
 fieldset {
     border: none;
 }
 
-.personal-info legend {
-    display: flex;
+#orange {
+    margin: auto;
+    display: block;
     justify-content: center;
     align-items: center;
     width: 750px;
     height: 133px;
     background: #F67669;
+    z-index: -1;
+    border-radius: 20px 20px 0 0;
+}
+
+.personal-info legend {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: -110px;
 }
 
 .field-name {
