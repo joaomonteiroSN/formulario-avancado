@@ -17,23 +17,23 @@
     </header>
     <div id="orange"></div>
     <div class="page">
-        <form action="#">
+        <form id="form" action="#">
             <fieldset class="personal-info">
 
                 <legend>informações pessoais</legend>
                 <div class="field-name">
                     <div class="input-wrapper">
                         <label for="firstname">Nome</label>
-                        <input type="text" id="firstname">
+                        <input type="text" id="firstname" minlength="3" max="20" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="lastname">Sobrenome</label>
-                        <input type="text" id="lastname">
+                        <input type="text" id="lastname" required>
                     </div>
                 </div>
                 <div class="input-wrapper-mail">
                     <label for="email">Email <span>(digite um email válido)</span></label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required>
                 </div>
             </fieldset>
 
@@ -42,14 +42,14 @@
 
                 <div class="input-wrapper">
                     <label for="info-mentor">Selecione quem foi o seu mentor</label>
-                    <input type="text" name="info-mentor" id="info-mentor">
+                    <input type="text" name="info-mentor" id="info-mentor" required>
                 </div>
 
                 <div class="input-wrapper">
                     <label for="mentor-feedback">
                         Feedback sobre o mentor
                     </label>
-                    <textarea name="" id="mentor-feedback" cols="30" rows="10"></textarea>
+                    <textarea name="" id="mentor-feedback" cols="30" rows="10" required></textarea>
                 </div>
 
                 <div class="check">
@@ -64,23 +64,23 @@
 
                 <div class="input-wrapper">
                     <label for="date-info">Data <span>(DD/MM/AAAA)</span></label>
-                    <input type="date" class="date-info">
+                    <input type="date" class="date-info" required>
                 </div>
 
                 <div class="time-field">
                     <div class="input-wrapper">
                         <label for="time-info">Das</label>
-                        <input type="time" class="time-info">
+                        <input type="time" class="time-info" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="time-info">Até</label>
-                        <input type="time" class="time-info">
+                        <input type="time" class="time-info" required>
                     </div>
                 </div>
             </fieldset>
         </form>
         <footer>
-            <input type="submit" value="Salvar">
+            <input form="form" type="submit" value="Salvar">
         </footer>
     </div>
 </body>
